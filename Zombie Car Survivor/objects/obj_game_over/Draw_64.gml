@@ -53,6 +53,15 @@ draw_set_valign(fa_middle);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
+/// @DnDHash : 6BA54E40
+/// @DnDArgument : "x" "1920/2"
+/// @DnDArgument : "y" "(1080 / 2)+100"
+/// @DnDArgument : "caption" ""Points:""
+/// @DnDArgument : "var" "global.points"
+draw_text(1920/2, (1080 / 2)+100, string("Points:") + string(global.points));
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDVersion : 1
 /// @DnDHash : 24A43BC5
 /// @DnDComment : // Draw game over text.
 /// @DnDArgument : "x" "1920 / 2"
