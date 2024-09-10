@@ -3,9 +3,7 @@
 /// @DnDHash : 6752F637
 /// @DnDComment : // If hitpoints are over zero...
 /// @DnDArgument : "expr" "hitpoints > 0"
-if(hitpoints > 0)
-{
-	/// @DnDAction : YoYo Games.Random.Choose
+if(hitpoints > 0){	/// @DnDAction : YoYo Games.Random.Choose
 	/// @DnDVersion : 1
 	/// @DnDHash : 74322F8E
 	/// @DnDComment : // Choose a random shooting sound effect.
@@ -90,13 +88,18 @@ if(hitpoints > 0)
 	/// @DnDComment : // If our hitpoints has reached zero...
 	/// @DnDParent : 6752F637
 	/// @DnDArgument : "expr" "hitpoints <= 0"
-	if(hitpoints <= 0)
-	{
+	if(hitpoints <= 0){	/// @DnDAction : YoYo Games.Common.Set_Global
+		/// @DnDVersion : 1
+		/// @DnDHash : 0FD63858
+		/// @DnDParent : 2BDA2D23
+		/// @DnDArgument : "value" "pointWorth"
+		/// @DnDArgument : "value_relative" "1"
+		/// @DnDArgument : "var" "global.points"
+		global.points += pointWorth;
+	
 		/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 		/// @DnDVersion : 1
 		/// @DnDHash : 009B7F5C
 		/// @DnDComment : // Destroy this instance.
 		/// @DnDParent : 2BDA2D23
-		instance_destroy();
-	}
-}
+		instance_destroy();}}

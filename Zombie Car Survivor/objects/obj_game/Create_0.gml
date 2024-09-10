@@ -9,6 +9,12 @@ audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
+/// @DnDHash : 4CD2CC4E
+/// @DnDArgument : "var" "points"
+global.points = 0;
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
 /// @DnDHash : 1DF9B74A
 /// @DnDComment : // Set the experience goal to reach the next level.
 /// @DnDArgument : "value" "10"
@@ -101,9 +107,7 @@ spawn_enemy_cooldown = global.enemy_spawn_speed * (1 / 60);
 /// @DnDHash : 03928273
 /// @DnDComment : // Function handles enemy spawning.
 /// @DnDArgument : "funcName" "spawn_enemy"
-function spawn_enemy() 
-{
-	/// @DnDAction : YoYo Games.Common.Variable
+function spawn_enemy() {	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 6990133E
 	/// @DnDComment : // Reset cooldown.
@@ -119,17 +123,12 @@ function spawn_enemy()
 	/// @DnDParent : 03928273
 	/// @DnDArgument : "obj" "obj_upgrade"
 	/// @DnDSaveInfo : "obj" "obj_upgrade"
-	var l4E85324C_0 = false;
-	l4E85324C_0 = instance_exists(obj_upgrade);
-	if(l4E85324C_0)
-	{
-		/// @DnDAction : YoYo Games.Common.Exit_Event
+	var l4E85324C_0 = false;l4E85324C_0 = instance_exists(obj_upgrade);if(l4E85324C_0){	/// @DnDAction : YoYo Games.Common.Exit_Event
 		/// @DnDVersion : 1
 		/// @DnDHash : 29784589
 		/// @DnDComment : // Exit event, stopping any enemies from spawning.
 		/// @DnDParent : 4E85324C
-		exit;
-	}
+		exit;}
 
 	/// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 	/// @DnDVersion : 1
@@ -138,17 +137,12 @@ function spawn_enemy()
 	/// @DnDParent : 03928273
 	/// @DnDArgument : "obj" "obj_game_over"
 	/// @DnDSaveInfo : "obj" "obj_game_over"
-	var l0CF07B0C_0 = false;
-	l0CF07B0C_0 = instance_exists(obj_game_over);
-	if(l0CF07B0C_0)
-	{
-		/// @DnDAction : YoYo Games.Common.Exit_Event
+	var l0CF07B0C_0 = false;l0CF07B0C_0 = instance_exists(obj_game_over);if(l0CF07B0C_0){	/// @DnDAction : YoYo Games.Common.Exit_Event
 		/// @DnDVersion : 1
 		/// @DnDHash : 1F5859BF
 		/// @DnDComment : // Exit event, stopping any enemies from spawning.
 		/// @DnDParent : 0CF07B0C
-		exit;
-	}
+		exit;}
 
 	/// @DnDAction : YoYo Games.Instances.If_Instance_Exists
 	/// @DnDVersion : 1
@@ -157,17 +151,12 @@ function spawn_enemy()
 	/// @DnDParent : 03928273
 	/// @DnDArgument : "obj" "obj_template_complete"
 	/// @DnDSaveInfo : "obj" "obj_template_complete"
-	var l1270B139_0 = false;
-	l1270B139_0 = instance_exists(obj_template_complete);
-	if(l1270B139_0)
-	{
-		/// @DnDAction : YoYo Games.Common.Exit_Event
+	var l1270B139_0 = false;l1270B139_0 = instance_exists(obj_template_complete);if(l1270B139_0){	/// @DnDAction : YoYo Games.Common.Exit_Event
 		/// @DnDVersion : 1
 		/// @DnDHash : 605B7469
 		/// @DnDComment : // Exit event, stopping any enemies from spawning.
 		/// @DnDParent : 1270B139
-		exit;
-	}
+		exit;}
 
 	/// @DnDAction : YoYo Games.Common.Temp_Variable
 	/// @DnDVersion : 1
@@ -184,9 +173,7 @@ function spawn_enemy()
 	/// @DnDComment : // If we are over level 2...
 	/// @DnDParent : 03928273
 	/// @DnDArgument : "expr" "global.level > 2"
-	if(global.level > 2)
-	{
-		/// @DnDAction : YoYo Games.Random.Choose
+	if(global.level > 2){	/// @DnDAction : YoYo Games.Random.Choose
 		/// @DnDVersion : 1
 		/// @DnDHash : 647F2FA1
 		/// @DnDComment : // Change the enemy type to either$(13_10)// pigun or pumpkill.
@@ -195,8 +182,7 @@ function spawn_enemy()
 		/// @DnDArgument : "var" "_enemy"
 		/// @DnDArgument : "option" "obj_pigun"
 		/// @DnDArgument : "option_1" "obj_pumpkill"
-		_enemy = choose(obj_pigun, obj_pumpkill);
-	}
+		_enemy = choose(obj_pigun, obj_pumpkill);}
 
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
@@ -204,9 +190,7 @@ function spawn_enemy()
 	/// @DnDComment : // If we are over level 4...
 	/// @DnDParent : 03928273
 	/// @DnDArgument : "expr" "global.level > 4"
-	if(global.level > 4)
-	{
-		/// @DnDAction : YoYo Games.Random.Choose
+	if(global.level > 4){	/// @DnDAction : YoYo Games.Random.Choose
 		/// @DnDVersion : 1
 		/// @DnDHash : 2353686B
 		/// @DnDComment : // Change the enemy type to either$(13_10)// pigun, pumpkill or rooster.
@@ -216,8 +200,7 @@ function spawn_enemy()
 		/// @DnDArgument : "option" "obj_pigun"
 		/// @DnDArgument : "option_1" "obj_pumpkill"
 		/// @DnDArgument : "option_2" "obj_rooster"
-		_enemy = choose(obj_pigun, obj_pumpkill, obj_rooster);
-	}
+		_enemy = choose(obj_pigun, obj_pumpkill, obj_rooster);}
 
 	/// @DnDAction : YoYo Games.Common.Temp_Variable
 	/// @DnDVersion : 1
@@ -254,5 +237,4 @@ function spawn_enemy()
 	/// @DnDArgument : "xpos" "_x"
 	/// @DnDArgument : "ypos" "_y"
 	/// @DnDArgument : "objectid" "_enemy"
-	instance_create_layer(_x, _y, "Instances", _enemy);
-}
+	instance_create_layer(_x, _y, "Instances", _enemy);}

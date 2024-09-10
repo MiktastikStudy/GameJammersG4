@@ -50,3 +50,10 @@ hitpoints = hitpoints_max;
 walk_sprite = spr_pumpkill_walk;
 attack_sprite = spr_pumpkill_attack;
 hit_sprite = spr_pumpkill_hit;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 2ABB4328
+/// @DnDArgument : "expr" "50"
+/// @DnDArgument : "var" "pointWorth"
+pointWorth = 50;
