@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_collectible_gen",
-    "path":"sprites/spr_collectible_gen/spr_collectible_gen.yy",
+    "name":"spr_collectible_fuel_tank",
+    "path":"sprites/spr_collectible_fuel_tank/spr_collectible_fuel_tank.yy",
   },
   "spriteMaskId":null,
   "visible":true,
