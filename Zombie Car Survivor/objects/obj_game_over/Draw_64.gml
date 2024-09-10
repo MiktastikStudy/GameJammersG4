@@ -55,10 +55,10 @@ draw_set_valign(fa_middle);
 /// @DnDVersion : 1
 /// @DnDHash : 6BA54E40
 /// @DnDArgument : "x" "1920/2"
-/// @DnDArgument : "y" "(1080 / 2)+100"
+/// @DnDArgument : "y" "(1080 / 2)-150"
 /// @DnDArgument : "caption" ""Points:""
 /// @DnDArgument : "var" "global.points"
-draw_text(1920/2, (1080 / 2)+100, string("Points:") + string(global.points));
+draw_text(1920/2, (1080 / 2)-150, string("Points:") + string(global.points));
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
