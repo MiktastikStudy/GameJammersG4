@@ -148,6 +148,7 @@
     {"id":{"name":"spr_healthbar_fill","path":"sprites/spr_healthbar_fill/spr_healthbar_fill.yy",},},
     {"id":{"name":"spr_hero_hit","path":"sprites/spr_hero_hit/spr_hero_hit.yy",},},
     {"id":{"name":"spr_hero_idle","path":"sprites/spr_hero_idle/spr_hero_idle.yy",},},
+    {"id":{"name":"spr_hero_run_up","path":"sprites/spr_hero_run_up/spr_hero_run_up.yy",},},
     {"id":{"name":"spr_hero_run","path":"sprites/spr_hero_run/spr_hero_run.yy",},},
     {"id":{"name":"spr_joystick_big","path":"sprites/spr_joystick_big/spr_joystick_big.yy",},},
     {"id":{"name":"spr_joystick_small","path":"sprites/spr_joystick_small/spr_joystick_small.yy",},},
