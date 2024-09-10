@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":75,
+  "height":71,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"31a52803-2f04-4d36-a777-d0819fb61baf","blendMode":0,"displayName":"default","isLocked":false,"name":"31a52803-2f04-4d36-a777-d0819fb61baf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -42,7 +42,7 @@
     ],
     "top":0,
   },
-  "origin":0,
+  "origin":9,
   "parent":{
     "name":"Collectables",
     "path":"folders/Sprites/Collectables.yy",
@@ -94,8 +94,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":35,
+    "yorigin":70,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
@@ -105,5 +105,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":75,
+  "width":62,
 }
