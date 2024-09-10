@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_collectible_fuel_tank",
-    "path":"sprites/spr_collectible_fuel_tank/spr_collectible_fuel_tank.yy",
+    "name":"spr_collectible_metal_nut",
+    "path":"sprites/spr_collectible_metal_nut/spr_collectible_metal_nut.yy",
   },
   "spriteMaskId":null,
   "visible":true,

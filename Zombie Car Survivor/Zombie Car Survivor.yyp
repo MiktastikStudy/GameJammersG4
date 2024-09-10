@@ -138,7 +138,7 @@
     {"id":{"name":"spr_button_small","path":"sprites/spr_button_small/spr_button_small.yy",},},
     {"id":{"name":"spr_card_glow","path":"sprites/spr_card_glow/spr_card_glow.yy",},},
     {"id":{"name":"spr_collectible_fuel_tank","path":"sprites/spr_collectible_fuel_tank/spr_collectible_fuel_tank.yy",},},
-    {"id":{"name":"spr_collectible_heart","path":"sprites/spr_collectible_heart/spr_collectible_heart.yy",},},
+    {"id":{"name":"spr_collectible_metal_nut","path":"sprites/spr_collectible_metal_nut/spr_collectible_metal_nut.yy",},},
     {"id":{"name":"spr_exit_button","path":"sprites/spr_exit_button/spr_exit_button.yy",},},
     {"id":{"name":"spr_game_over_banner","path":"sprites/spr_game_over_banner/spr_game_over_banner.yy",},},
     {"id":{"name":"spr_gem_icon","path":"sprites/spr_gem_icon/spr_gem_icon.yy",},},
