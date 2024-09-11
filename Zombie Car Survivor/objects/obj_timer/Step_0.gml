@@ -114,6 +114,14 @@ else{	/// @DnDAction : YoYo Games.Common.If_Expression
 			/// @DnDSaveInfo : "objectid" "obj_game_over"
 			instance_create_layer(1920 / 2, 1080 / 2 - 150, "UpgradeScreen", obj_game_over);
 		
+			/// @DnDAction : YoYo Games.Common.Set_Global
+			/// @DnDVersion : 1
+			/// @DnDHash : 6381FD3E
+			/// @DnDParent : 6C15CE7D
+			/// @DnDArgument : "value" "true"
+			/// @DnDArgument : "var" "global.time_up"
+			global.time_up = true;
+		
 			/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 			/// @DnDVersion : 1
 			/// @DnDHash : 1CC5D002
@@ -124,8 +132,6 @@ else{	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDAction : YoYo Games.Common.Else
 	/// @DnDVersion : 1
 	/// @DnDHash : 42BC0473
-	/// @DnDBreak : 1
-
 	/// @DnDParent : 1F5C8933
 	else{	/// @DnDAction : YoYo Games.Common.Exit_Event
 		/// @DnDVersion : 1
