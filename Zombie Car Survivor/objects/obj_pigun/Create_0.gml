@@ -42,3 +42,10 @@ hitpoints = hitpoints_max;
 walk_sprite = spr_pigun_walk;
 attack_sprite = spr_pigun_attack;
 hit_sprite = spr_pigun_hit;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 1B67AD5A
+/// @DnDArgument : "expr" "100"
+/// @DnDArgument : "var" "pointWorth"
+pointWorth = 100;

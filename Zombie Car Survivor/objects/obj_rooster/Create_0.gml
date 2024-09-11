@@ -34,3 +34,26 @@ image_speed = 1;
 walk_sprite = spr_rooster_walk;
 attack_sprite = spr_rooster_attack;
 hit_sprite = spr_rooster_hit;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 7F7C0F8D
+/// @DnDArgument : "expr" "200"
+/// @DnDArgument : "var" "pointWorth"
+pointWorth = 200;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 0106B732
+/// @DnDComment : // Set max hitpoints for this enemy type.
+/// @DnDArgument : "expr" "2 * global.enemy_health_bonus"
+/// @DnDArgument : "var" "hitpoints_max"
+hitpoints_max = 2 * global.enemy_health_bonus;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 4A1553A8
+/// @DnDComment : // Set hitpoints.
+/// @DnDArgument : "expr" "hitpoints_max"
+/// @DnDArgument : "var" "hitpoints"
+hitpoints = hitpoints_max;

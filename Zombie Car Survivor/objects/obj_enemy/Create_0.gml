@@ -28,8 +28,7 @@ speed = 4;
 /// @DnDComment : // Set image scale.
 /// @DnDArgument : "xscale" "0.5"
 /// @DnDArgument : "yscale" "0.5"
-image_xscale = 0.5;
-image_yscale = 0.5;
+image_xscale = 0.5;image_yscale = 0.5;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
