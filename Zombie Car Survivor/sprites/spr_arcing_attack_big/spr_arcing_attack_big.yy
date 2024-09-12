@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":233,
   "bbox_left":0,
-  "bbox_right":226,
+  "bbox_right":233,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"59a0493e-4f67-4982-9dae-18eacda77081","name":"59a0493e-4f67-4982-9dae-18eacda77081","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"33a50e00-4c6b-4bbc-a4f0-58ae04dfb0b8","name":"33a50e00-4c6b-4bbc-a4f0-58ae04dfb0b8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":234,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"778739e8-99e4-4a9c-93d4-d3504b6b6f76","blendMode":0,"displayName":"default","isLocked":false,"name":"778739e8-99e4-4a9c-93d4-d3504b6b6f76","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"3377e69e-9dff-463d-bb29-6251a2383e96","blendMode":0,"displayName":"default","isLocked":false,"name":"3377e69e-9dff-463d-bb29-6251a2383e96","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_arcing_attack_big",
   "nineSlice":null,
@@ -69,13 +69,13 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"59a0493e-4f67-4982-9dae-18eacda77081","path":"sprites/spr_arcing_attack_big/spr_arcing_attack_big.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"097d6ce7-212d-494e-bcf2-c77e127ce54b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"33a50e00-4c6b-4bbc-a4f0-58ae04dfb0b8","path":"sprites/spr_arcing_attack_big/spr_arcing_attack_big.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"79486372-91dc-4733-8c79-1d235efa0975","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":113,
+    "xorigin":117,
     "yorigin":117,
   },
   "swatchColours":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":227,
+  "width":234,
 }

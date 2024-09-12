@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":233,
   "bbox_left":0,
-  "bbox_right":226,
+  "bbox_right":233,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e1f6d79d-c348-46d7-9236-fe079b812686","name":"e1f6d79d-c348-46d7-9236-fe079b812686","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"b166d568-38a7-46c2-9cc3-73f8856b4566","name":"b166d568-38a7-46c2-9cc3-73f8856b4566","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":234,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b150c33f-213b-4c31-b07a-a3b9ffd84b86","blendMode":0,"displayName":"default","isLocked":false,"name":"b150c33f-213b-4c31-b07a-a3b9ffd84b86","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ab1befad-9f34-4a3e-bf7f-5233970fca49","blendMode":0,"displayName":"default","isLocked":false,"name":"ab1befad-9f34-4a3e-bf7f-5233970fca49","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_shooting_attack_big",
   "nineSlice":null,
@@ -69,13 +69,13 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e1f6d79d-c348-46d7-9236-fe079b812686","path":"sprites/spr_shooting_attack_big/spr_shooting_attack_big.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"781aa371-04d7-4b96-8e0a-eb9e927ebe7a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b166d568-38a7-46c2-9cc3-73f8856b4566","path":"sprites/spr_shooting_attack_big/spr_shooting_attack_big.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4a61ce4a-d684-4063-abd0-1bd00c319743","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":113,
+    "xorigin":117,
     "yorigin":117,
   },
   "swatchColours":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":227,
+  "width":234,
 }
