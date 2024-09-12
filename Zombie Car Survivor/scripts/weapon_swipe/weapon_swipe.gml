@@ -17,9 +17,7 @@ weapon_swipe_reset();
 /// @DnDHash : 57FF56EA
 /// @DnDComment : // Define the reset function for the swipe weapon.
 /// @DnDArgument : "funcName" "weapon_swipe_reset"
-function weapon_swipe_reset() 
-{
-	/// @DnDAction : YoYo Games.Data Structures.Map_Set_Value
+function weapon_swipe_reset() {	/// @DnDAction : YoYo Games.Data Structures.Map_Set_Value
 	/// @DnDVersion : 1
 	/// @DnDHash : 677B3E4A
 	/// @DnDComment : // Reset swipe weapon values.
@@ -34,8 +32,7 @@ function weapon_swipe_reset()
 	/// @DnDArgument : "value_2" "false"
 	ds_map_replace(global.swipe, "damage", 1);
 	ds_map_replace(global.swipe, "attack_speed", 60);
-	ds_map_replace(global.swipe, "unlocked", false);
-}
+	ds_map_replace(global.swipe, "unlocked", false);}
 
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
@@ -43,9 +40,7 @@ function weapon_swipe_reset()
 /// @DnDComment : // Decalre a function to get the swipe weapon upgrades.
 /// @DnDArgument : "funcName" "weapon_swipe_upgrades"
 /// @DnDArgument : "arg" "_upgrade_list"
-function weapon_swipe_upgrades(_upgrade_list) 
-{
-	/// @DnDAction : YoYo Games.Data Structures.Map_Get_Value
+function weapon_swipe_upgrades(_upgrade_list) {	/// @DnDAction : YoYo Games.Data Structures.Map_Get_Value
 	/// @DnDVersion : 1
 	/// @DnDHash : 678BEA6A
 	/// @DnDComment : // Get wether the swipe weapon is unlocked.
@@ -63,9 +58,7 @@ function weapon_swipe_upgrades(_upgrade_list)
 	/// @DnDParent : 6EEB128B
 	/// @DnDArgument : "expr" "_unlocked"
 	/// @DnDArgument : "not" "1"
-	if(!(_unlocked))
-	{
-		/// @DnDAction : YoYo Games.Data Structures.Create_Map
+	if(!(_unlocked)){	/// @DnDAction : YoYo Games.Data Structures.Create_Map
 		/// @DnDVersion : 1
 		/// @DnDHash : 30C3E189
 		/// @DnDComment : // Create a map to hold the upgrade.
@@ -94,14 +87,14 @@ function weapon_swipe_upgrades(_upgrade_list)
 		/// @DnDArgument : "key_5" ""icon""
 		/// @DnDArgument : "value_5" "spr_arcing_attack_big"
 		/// @DnDArgument : "key_6" ""weapon_name""
-		/// @DnDArgument : "value_6" ""SWIPE""
+		/// @DnDArgument : "value_6" ""SHOCKWAVE""
 		ds_map_replace(_map, "description", "Small but fast\narea of effect\nattack around\nthe player");
 		ds_map_replace(_map, "title", "UNLOCK");
 		ds_map_replace(_map, "object", global.swipe);
 		ds_map_replace(_map, "key", "unlocked");
 		ds_map_replace(_map, "amount", 1);
 		ds_map_replace(_map, "icon", spr_arcing_attack_big);
-		ds_map_replace(_map, "weapon_name", "SWIPE");
+		ds_map_replace(_map, "weapon_name", "SHOCKWAVE");
 	
 		/// @DnDAction : YoYo Games.Data Structures.List_Add
 		/// @DnDVersion : 1
@@ -117,8 +110,7 @@ function weapon_swipe_upgrades(_upgrade_list)
 		/// @DnDHash : 11D8507E
 		/// @DnDComment : // Exit here, because there can't possibly be any other upgrades$(13_10)// if the weapon is not unlocked.
 		/// @DnDParent : 1A3CA1EB
-		exit;
-	}
+		exit;}
 
 	/// @DnDAction : YoYo Games.Data Structures.Map_Get_Value
 	/// @DnDVersion : 1
@@ -137,9 +129,7 @@ function weapon_swipe_upgrades(_upgrade_list)
 	/// @DnDComment : // If attack speed is over 10...
 	/// @DnDParent : 6EEB128B
 	/// @DnDArgument : "expr" "_attack_speed > 10"
-	if(_attack_speed > 10)
-	{
-		/// @DnDAction : YoYo Games.Data Structures.Create_Map
+	if(_attack_speed > 10){	/// @DnDAction : YoYo Games.Data Structures.Create_Map
 		/// @DnDVersion : 1
 		/// @DnDHash : 35472F21
 		/// @DnDComment : // Create a map to hold the upgrade.
@@ -168,14 +158,14 @@ function weapon_swipe_upgrades(_upgrade_list)
 		/// @DnDArgument : "key_5" ""icon""
 		/// @DnDArgument : "value_5" "spr_arcing_attack_big"
 		/// @DnDArgument : "key_6" ""weapon_name""
-		/// @DnDArgument : "value_6" ""SWIPE""
+		/// @DnDArgument : "value_6" ""SHOCKWAVE""
 		ds_map_replace(_map, "description", "Increase Attack Speed");
 		ds_map_replace(_map, "title", "SPEED");
 		ds_map_replace(_map, "object", global.swipe);
 		ds_map_replace(_map, "key", "attack_speed");
 		ds_map_replace(_map, "amount", -10);
 		ds_map_replace(_map, "icon", spr_arcing_attack_big);
-		ds_map_replace(_map, "weapon_name", "SWIPE");
+		ds_map_replace(_map, "weapon_name", "SHOCKWAVE");
 	
 		/// @DnDAction : YoYo Games.Data Structures.List_Add
 		/// @DnDVersion : 1
@@ -184,8 +174,7 @@ function weapon_swipe_upgrades(_upgrade_list)
 		/// @DnDParent : 424103C4
 		/// @DnDArgument : "var" "_upgrade_list"
 		/// @DnDArgument : "value" "_map"
-		ds_list_add(_upgrade_list, _map);
-	}
+		ds_list_add(_upgrade_list, _map);}
 
 	/// @DnDAction : YoYo Games.Data Structures.Map_Get_Value
 	/// @DnDVersion : 1
@@ -204,9 +193,7 @@ function weapon_swipe_upgrades(_upgrade_list)
 	/// @DnDComment : // Checks if the value is below 5.
 	/// @DnDParent : 6EEB128B
 	/// @DnDArgument : "expr" "_damage < 5"
-	if(_damage < 5)
-	{
-		/// @DnDAction : YoYo Games.Data Structures.Create_Map
+	if(_damage < 5){	/// @DnDAction : YoYo Games.Data Structures.Create_Map
 		/// @DnDVersion : 1
 		/// @DnDHash : 06B76963
 		/// @DnDComment : // Create a map to hold the upgrade.
@@ -235,14 +222,14 @@ function weapon_swipe_upgrades(_upgrade_list)
 		/// @DnDArgument : "key_5" ""icon""
 		/// @DnDArgument : "value_5" "spr_arcing_attack_big"
 		/// @DnDArgument : "key_6" ""weapon_name""
-		/// @DnDArgument : "value_6" ""SWIPE""
+		/// @DnDArgument : "value_6" ""SHOCKWAVE""
 		ds_map_replace(_map, "description", "Increase Damage");
 		ds_map_replace(_map, "title", "DAMAGE");
 		ds_map_replace(_map, "object", global.swipe);
 		ds_map_replace(_map, "key", "damage");
 		ds_map_replace(_map, "amount", 1);
 		ds_map_replace(_map, "icon", spr_arcing_attack_big);
-		ds_map_replace(_map, "weapon_name", "SWIPE");
+		ds_map_replace(_map, "weapon_name", "SHOCKWAVE");
 	
 		/// @DnDAction : YoYo Games.Data Structures.List_Add
 		/// @DnDVersion : 1
@@ -251,6 +238,4 @@ function weapon_swipe_upgrades(_upgrade_list)
 		/// @DnDParent : 1152B63B
 		/// @DnDArgument : "var" "_upgrade_list"
 		/// @DnDArgument : "value" "_map"
-		ds_list_add(_upgrade_list, _map);
-	}
-}
+		ds_list_add(_upgrade_list, _map);}}
