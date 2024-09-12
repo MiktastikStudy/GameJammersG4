@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":233,
   "bbox_left":0,
-  "bbox_right":226,
+  "bbox_right":233,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"76af3f63-c107-4714-a993-b314a7b2750a","name":"76af3f63-c107-4714-a993-b314a7b2750a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a84a5019-d702-448d-9e27-326f643b2b53","name":"a84a5019-d702-448d-9e27-326f643b2b53","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":234,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"f58d916c-3f1c-46f5-9374-142534f2a3e7","blendMode":0,"displayName":"default","isLocked":false,"name":"f58d916c-3f1c-46f5-9374-142534f2a3e7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"3bf9f10a-f430-45e6-bc0f-c2e03072b2e0","blendMode":0,"displayName":"default","isLocked":false,"name":"3bf9f10a-f430-45e6-bc0f-c2e03072b2e0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_trail_attack_big",
   "nineSlice":null,
@@ -69,13 +69,13 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"76af3f63-c107-4714-a993-b314a7b2750a","path":"sprites/spr_trail_attack_big/spr_trail_attack_big.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a15e2283-8a66-4eee-b0dc-ffdbb688a797","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a84a5019-d702-448d-9e27-326f643b2b53","path":"sprites/spr_trail_attack_big/spr_trail_attack_big.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0cffd2f1-ed3d-47f3-90aa-914a34359659","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":113,
+    "xorigin":117,
     "yorigin":117,
   },
   "swatchColours":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":227,
+  "width":234,
 }
