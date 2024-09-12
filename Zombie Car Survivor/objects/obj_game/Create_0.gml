@@ -9,6 +9,13 @@ audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
+/// @DnDHash : 4FFE5A68
+/// @DnDArgument : "value" "false"
+/// @DnDArgument : "var" "global.time_up"
+global.time_up = false;
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
 /// @DnDHash : 73CD631D
 /// @DnDArgument : "value" "false"
 /// @DnDArgument : "var" "global.upgrading"
