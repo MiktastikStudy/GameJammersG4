@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 158C564F
+/// @DnDArgument : "value" "true"
+/// @DnDArgument : "var" "global.upgrading"
+global.upgrading = true;
+
 /// @DnDAction : YoYo Games.Audio.Stop_All_Audio
 /// @DnDVersion : 1
 /// @DnDHash : 6AC0A794

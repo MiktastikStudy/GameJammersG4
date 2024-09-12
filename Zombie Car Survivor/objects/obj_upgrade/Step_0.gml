@@ -20,17 +20,13 @@ var _max_pads = gamepad_get_device_count();
 /// @DnDComment : // Checks when at least 1 gamepad is present.
 /// @DnDArgument : "var" "_max_pads"
 /// @DnDArgument : "op" "2"
-if(_max_pads > 0)
-{
-	/// @DnDAction : YoYo Games.Common.If_Expression
+if(_max_pads > 0){	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 2C34555E
 	/// @DnDComment : // Checks the gamepad is connected.
 	/// @DnDParent : 68F93F52
 	/// @DnDArgument : "expr" "gamepad_is_connected(0)"
-	if(gamepad_is_connected(0))
-	{
-		/// @DnDAction : YoYo Games.Gamepad.Set_Gamepad_Axis_Deadzone
+	if(gamepad_is_connected(0)){	/// @DnDAction : YoYo Games.Gamepad.Set_Gamepad_Axis_Deadzone
 		/// @DnDVersion : 1
 		/// @DnDHash : 2D7E0F18
 		/// @DnDComment : // Sets the gamepads deadzone.
@@ -44,9 +40,7 @@ if(_max_pads > 0)
 		/// @DnDComment : // Checks if the gamepads left stick is moved.
 		/// @DnDParent : 2C34555E
 		/// @DnDArgument : "expr" "gamepad_axis_value(0, gp_axislv) != 0 || gamepad_axis_value(0, gp_axislh) != 0"
-		if(gamepad_axis_value(0, gp_axislv) != 0 || gamepad_axis_value(0, gp_axislh) != 0)
-		{
-			/// @DnDAction : YoYo Games.Common.If_Variable
+		if(gamepad_axis_value(0, gp_axislv) != 0 || gamepad_axis_value(0, gp_axislh) != 0){	/// @DnDAction : YoYo Games.Common.If_Variable
 			/// @DnDVersion : 1
 			/// @DnDHash : 75A0A256
 			/// @DnDComment : // Checks if the upgrade is on the left side.
@@ -54,17 +48,13 @@ if(_max_pads > 0)
 			/// @DnDArgument : "var" "x"
 			/// @DnDArgument : "op" "1"
 			/// @DnDArgument : "value" "1920 / 2"
-			if(x < 1920 / 2)
-			{
-				/// @DnDAction : YoYo Games.Common.If_Expression
+			if(x < 1920 / 2){	/// @DnDAction : YoYo Games.Common.If_Expression
 				/// @DnDVersion : 1
 				/// @DnDHash : 6C6D633C
 				/// @DnDComment : // Checks if the controller axis is pointing left.
 				/// @DnDParent : 75A0A256
 				/// @DnDArgument : "expr" "gamepad_axis_value(0, gp_axislh) < -0.5"
-				if(gamepad_axis_value(0, gp_axislh) < -0.5)
-				{
-					/// @DnDAction : YoYo Games.Common.Variable
+				if(gamepad_axis_value(0, gp_axislh) < -0.5){	/// @DnDAction : YoYo Games.Common.Variable
 					/// @DnDVersion : 1
 					/// @DnDHash : 09B9E014
 					/// @DnDComment : // Sets the upgrade to glow.$(13_10)// Tells the other upgrades a controller has been used.
@@ -75,17 +65,13 @@ if(_max_pads > 0)
 					/// @DnDArgument : "var" "mouse_over"
 					/// @DnDArgument : "var_1" "global.is_mouse"
 					mouse_over = true;
-					global.is_mouse = false;
-				}
-			}
+					global.is_mouse = false;}}
 		
 			/// @DnDAction : YoYo Games.Common.Else
 			/// @DnDVersion : 1
 			/// @DnDHash : 3424B67F
 			/// @DnDParent : 059EE346
-			else
-			{
-				/// @DnDAction : YoYo Games.Common.If_Variable
+			else{	/// @DnDAction : YoYo Games.Common.If_Variable
 				/// @DnDVersion : 1
 				/// @DnDHash : 45B5B857
 				/// @DnDComment : // Checks if on the right side.
@@ -93,17 +79,13 @@ if(_max_pads > 0)
 				/// @DnDArgument : "var" "x"
 				/// @DnDArgument : "op" "2"
 				/// @DnDArgument : "value" "1920 / 2"
-				if(x > 1920 / 2)
-				{
-					/// @DnDAction : YoYo Games.Common.If_Expression
+				if(x > 1920 / 2){	/// @DnDAction : YoYo Games.Common.If_Expression
 					/// @DnDVersion : 1
 					/// @DnDHash : 62CE9D64
 					/// @DnDComment : // Checks if the controller axis is pointing right.
 					/// @DnDParent : 45B5B857
 					/// @DnDArgument : "expr" "gamepad_axis_value(0, gp_axislh) > 0.5"
-					if(gamepad_axis_value(0, gp_axislh) > 0.5)
-					{
-						/// @DnDAction : YoYo Games.Common.Variable
+					if(gamepad_axis_value(0, gp_axislh) > 0.5){	/// @DnDAction : YoYo Games.Common.Variable
 						/// @DnDVersion : 1
 						/// @DnDHash : 69E1C006
 						/// @DnDComment : // Sets the upgrade to glow.$(13_10)// Tells the other upgrades a controller has been used.
@@ -114,33 +96,25 @@ if(_max_pads > 0)
 						/// @DnDArgument : "var" "mouse_over"
 						/// @DnDArgument : "var_1" "global.is_mouse"
 						mouse_over = true;
-						global.is_mouse = false;
-					}
-				}
+						global.is_mouse = false;}}
 			
 				/// @DnDAction : YoYo Games.Common.Else
 				/// @DnDVersion : 1
 				/// @DnDHash : 44D75E0B
 				/// @DnDParent : 3424B67F
-				else
-				{
-					/// @DnDAction : YoYo Games.Common.If_Expression
+				else{	/// @DnDAction : YoYo Games.Common.If_Expression
 					/// @DnDVersion : 1
 					/// @DnDHash : 2E755621
 					/// @DnDComment : // Checks if the controller is pointing up.
 					/// @DnDParent : 44D75E0B
 					/// @DnDArgument : "expr" "gamepad_axis_value(0, gp_axislv) < -0.5"
-					if(gamepad_axis_value(0, gp_axislv) < -0.5)
-					{
-						/// @DnDAction : YoYo Games.Common.If_Expression
+					if(gamepad_axis_value(0, gp_axislv) < -0.5){	/// @DnDAction : YoYo Games.Common.If_Expression
 						/// @DnDVersion : 1
 						/// @DnDHash : 055A0C4C
 						/// @DnDComment : // Checks if controller is not pointing too much left or right
 						/// @DnDParent : 2E755621
 						/// @DnDArgument : "expr" "gamepad_axis_value(0, gp_axislh) > -0.5 && gamepad_axis_value(0, gp_axislh) < 0.5"
-						if(gamepad_axis_value(0, gp_axislh) > -0.5 && gamepad_axis_value(0, gp_axislh) < 0.5)
-						{
-							/// @DnDAction : YoYo Games.Common.Variable
+						if(gamepad_axis_value(0, gp_axislh) > -0.5 && gamepad_axis_value(0, gp_axislh) < 0.5){	/// @DnDAction : YoYo Games.Common.Variable
 							/// @DnDVersion : 1
 							/// @DnDHash : 0C0824DD
 							/// @DnDComment : // Sets the upgrade to glow.$(13_10)// Tells the other upgrades a controller has been used.
@@ -151,28 +125,20 @@ if(_max_pads > 0)
 							/// @DnDArgument : "var" "mouse_over"
 							/// @DnDArgument : "var_1" "global.is_mouse"
 							mouse_over = true;
-							global.is_mouse = false;
-						}
-					}
-				}
-			}
-		}
+							global.is_mouse = false;}}}}}
 	
 		/// @DnDAction : YoYo Games.Common.Else
 		/// @DnDVersion : 1
 		/// @DnDHash : 7AC6A129
 		/// @DnDParent : 2C34555E
-		else
-		{
-			/// @DnDAction : YoYo Games.Common.Set_Global
+		else{	/// @DnDAction : YoYo Games.Common.Set_Global
 			/// @DnDVersion : 1
 			/// @DnDHash : 58BEB3EE
 			/// @DnDComment : // Tells variable controller isn't being used.
 			/// @DnDParent : 7AC6A129
 			/// @DnDArgument : "value" "true"
 			/// @DnDArgument : "var" "global.is_mouse"
-			global.is_mouse = true;
-		}
+			global.is_mouse = true;}
 	
 		/// @DnDAction : YoYo Games.Gamepad.If_Gamepad_Button_Pressed
 		/// @DnDVersion : 1.1
@@ -180,11 +146,7 @@ if(_max_pads > 0)
 		/// @DnDComment : // Checks if gamepad button has been pressed.
 		/// @DnDParent : 2C34555E
 		/// @DnDArgument : "btn" "gp_face1"
-		var l39B49A5D_0 = 0;
-		var l39B49A5D_1 = gp_face1;
-		if(gamepad_is_connected(l39B49A5D_0) && gamepad_button_check_pressed(l39B49A5D_0, l39B49A5D_1))
-		{
-			/// @DnDAction : YoYo Games.Common.Variable
+		var l39B49A5D_0 = 0;var l39B49A5D_1 = gp_face1;if(gamepad_is_connected(l39B49A5D_0) && gamepad_button_check_pressed(l39B49A5D_0, l39B49A5D_1)){	/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDVersion : 1
 			/// @DnDHash : 7527A257
 			/// @DnDComment : // Upgrade has detected a click.$(13_10)// Click was done with gamepad.
@@ -195,41 +157,32 @@ if(_max_pads > 0)
 			/// @DnDArgument : "var" "is_clicked"
 			/// @DnDArgument : "var_1" "gamepad_bypass"
 			is_clicked = true;
-			gamepad_bypass = true;
-		}
-	}
+			gamepad_bypass = true;}}
 
 	/// @DnDAction : YoYo Games.Common.Else
 	/// @DnDVersion : 1
 	/// @DnDHash : 728BD68E
 	/// @DnDParent : 68F93F52
-	else
-	{
-		/// @DnDAction : YoYo Games.Common.Variable
+	else{	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 68ADFB3B
 		/// @DnDComment : // Tells upgrades no controllers available.
 		/// @DnDParent : 728BD68E
 		/// @DnDArgument : "expr" "true"
 		/// @DnDArgument : "var" "global.is_mouse"
-		global.is_mouse = true;
-	}
-}
+		global.is_mouse = true;}}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
 /// @DnDHash : 07F2F6D8
-else
-{
-	/// @DnDAction : YoYo Games.Common.Variable
+else{	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 473535A4
 	/// @DnDComment : // Tells upgrades no controllers available.
 	/// @DnDParent : 07F2F6D8
 	/// @DnDArgument : "expr" "true"
 	/// @DnDArgument : "var" "global.is_mouse"
-	global.is_mouse = true;
-}
+	global.is_mouse = true;}
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
@@ -241,17 +194,14 @@ else
 /// @DnDArgument : "expr_2" "device_mouse_y_to_gui(0) > bbox_top"
 /// @DnDArgument : "expr_3" "device_mouse_y_to_gui(0) < bbox_bottom"
 /// @DnDArgument : "expr_4" "global.is_mouse"
-if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right && device_mouse_y_to_gui(0) > bbox_top && device_mouse_y_to_gui(0) < bbox_bottom && global.is_mouse)
-{
-	/// @DnDAction : YoYo Games.Common.Variable
+if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right && device_mouse_y_to_gui(0) > bbox_top && device_mouse_y_to_gui(0) < bbox_bottom && global.is_mouse){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 75F3010F
 	/// @DnDComment : // Set mouse_over to true, to enable$(13_10)// the purple glow.
 	/// @DnDParent : 304AB4EA
 	/// @DnDArgument : "expr" "true"
 	/// @DnDArgument : "var" "mouse_over"
-	mouse_over = true;
-}
+	mouse_over = true;}
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -259,9 +209,7 @@ if(device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_right
 /// @DnDComment : // Checks if reveal effect if visible.
 /// @DnDArgument : "var" "roll_alpha"
 /// @DnDArgument : "op" "4"
-if(roll_alpha >= 0)
-{
-	/// @DnDAction : YoYo Games.Common.Variable
+if(roll_alpha >= 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 153D1CD8
 	/// @DnDComment : // Stops select highlight from occuring.
@@ -287,9 +235,7 @@ if(roll_alpha >= 0)
 	/// @DnDParent : 345CC37D
 	/// @DnDArgument : "var" "roll_life"
 	/// @DnDArgument : "op" "3"
-	if(roll_life <= 0)
-	{
-		/// @DnDAction : YoYo Games.Common.Variable
+	if(roll_life <= 0){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 3BF6AE84
 		/// @DnDComment : // Reduces alpha of upgrade reveal.
@@ -297,9 +243,7 @@ if(roll_alpha >= 0)
 		/// @DnDArgument : "expr" "-delta_time * 0.000001 * 2"
 		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "roll_alpha"
-		roll_alpha += -delta_time * 0.000001 * 2;
-	}
-}
+		roll_alpha += -delta_time * 0.000001 * 2;}}
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -307,18 +251,12 @@ if(roll_alpha >= 0)
 /// @DnDComment : // Checks if upgrade is highlighted.
 /// @DnDArgument : "var" "mouse_over"
 /// @DnDArgument : "value" "true"
-if(mouse_over == true)
-{
-	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Pressed
+if(mouse_over == true){	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Pressed
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 2AB5FFF9
 	/// @DnDComment : // If the left mouse button has been pressed...
 	/// @DnDParent : 299578BB
-	var l2AB5FFF9_0;
-	l2AB5FFF9_0 = mouse_check_button_pressed(mb_left);
-	if (l2AB5FFF9_0)
-	{
-		/// @DnDAction : YoYo Games.Audio.Play_Audio
+	var l2AB5FFF9_0;l2AB5FFF9_0 = mouse_check_button_pressed(mb_left);if (l2AB5FFF9_0){	/// @DnDAction : YoYo Games.Audio.Play_Audio
 		/// @DnDVersion : 1.1
 		/// @DnDHash : 2573429A
 		/// @DnDComment : // Play upgrade sound effect.
@@ -334,8 +272,7 @@ if(mouse_over == true)
 		/// @DnDParent : 2AB5FFF9
 		/// @DnDArgument : "expr" "true"
 		/// @DnDArgument : "var" "is_clicked"
-		is_clicked = true;
-	}
+		is_clicked = true;}
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
@@ -344,17 +281,13 @@ if(mouse_over == true)
 	/// @DnDParent : 299578BB
 	/// @DnDArgument : "var" "is_clicked"
 	/// @DnDArgument : "value" "true"
-	if(is_clicked == true)
-	{
-		/// @DnDAction : YoYo Games.Common.If_Expression
+	if(is_clicked == true){	/// @DnDAction : YoYo Games.Common.If_Expression
 		/// @DnDVersion : 1
 		/// @DnDHash : 154766E8
 		/// @DnDComment : // Checks for mouse release or gamepad bypass.
 		/// @DnDParent : 5DB1030D
 		/// @DnDArgument : "expr" "mouse_check_button_released(mb_left) || gamepad_bypass"
-		if(mouse_check_button_released(mb_left) || gamepad_bypass)
-		{
-			/// @DnDAction : YoYo Games.Audio.Play_Audio
+		if(mouse_check_button_released(mb_left) || gamepad_bypass){	/// @DnDAction : YoYo Games.Audio.Play_Audio
 			/// @DnDVersion : 1.1
 			/// @DnDHash : 2E77552E
 			/// @DnDComment : // Play select sound.
@@ -393,6 +326,14 @@ if(mouse_over == true)
 			/// @DnDArgument : "var" "_object[? _key]"
 			_object[? _key] += _amount;
 		
+			/// @DnDAction : YoYo Games.Common.Set_Global
+			/// @DnDVersion : 1
+			/// @DnDHash : 3421E39F
+			/// @DnDParent : 154766E8
+			/// @DnDArgument : "value" "false"
+			/// @DnDArgument : "var" "global.upgrading"
+			global.upgrading = false;
+		
 			/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 			/// @DnDVersion : 1
 			/// @DnDHash : 2BCEA4E0
@@ -425,7 +366,4 @@ if(mouse_over == true)
 			/// @DnDArgument : "soundid" "snd_music_game"
 			/// @DnDArgument : "loop" "1"
 			/// @DnDSaveInfo : "soundid" "snd_music_game"
-			audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
-		}
-	}
-}
+			audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);}}}

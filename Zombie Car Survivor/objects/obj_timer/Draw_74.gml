@@ -15,6 +15,12 @@ var l1A25DC33_0 = false;l1A25DC33_0 = instance_exists(obj_hero);if(!l1A25DC33_
 /// @DnDHash : 12A8A563
 draw_self();
 
+/// @DnDAction : YoYo Games.Drawing.Draw_Self
+/// @DnDVersion : 1
+/// @DnDHash : 66656B13
+/// @DnDApplyTo : {obj_meteor}
+with(obj_meteor) draw_self();
+
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
 /// @DnDHash : 6DFD729B
@@ -26,7 +32,8 @@ draw_set_font(fnt_large);
 /// @DnDVersion : 1
 /// @DnDHash : 7249EAD6
 /// @DnDArgument : "x_relative" "1"
+/// @DnDArgument : "y" "25"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "caption" ""
 /// @DnDArgument : "var" "global.timeInSeconds"
-draw_text(x + 0, y + 0,  + string(global.timeInSeconds));
+draw_text(x + 0, y + 25,  + string(global.timeInSeconds));

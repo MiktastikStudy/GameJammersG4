@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"HUD_meteor",
   "bboxMode":0,
-  "bbox_bottom":239,
+  "bbox_bottom":199,
   "bbox_left":0,
-  "bbox_right":239,
+  "bbox_right":199,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"714fc8fa-f6e9-4bb1-852a-b57a733d72bc","name":"714fc8fa-f6e9-4bb1-852a-b57a733d72bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6ffbe5ec-3638-4e68-8cd2-6a41780e0b67","name":"6ffbe5ec-3638-4e68-8cd2-6a41780e0b67","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":240,
+  "height":200,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d750ec26-2ae5-45e5-8000-d46b77c24313","blendMode":0,"displayName":"default","isLocked":false,"name":"d750ec26-2ae5-45e5-8000-d46b77c24313","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"23cdbf80-9cda-43a5-bb40-8350056f346e","blendMode":0,"displayName":"default","isLocked":false,"name":"23cdbf80-9cda-43a5-bb40-8350056f346e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"HUD_meteor",
   "nineSlice":{
@@ -88,14 +88,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"714fc8fa-f6e9-4bb1-852a-b57a733d72bc","path":"sprites/HUD_meteor/HUD_meteor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"97ebd429-ada9-4d24-8b99-714b3c2d2116","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6ffbe5ec-3638-4e68-8cd2-6a41780e0b67","path":"sprites/HUD_meteor/HUD_meteor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5acf836d-07a1-4870-9fb6-ef862b2f36fb","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":120,
-    "yorigin":120,
+    "xorigin":100,
+    "yorigin":100,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -105,5 +105,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":240,
+  "width":200,
 }
